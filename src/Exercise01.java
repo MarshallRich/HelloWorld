@@ -17,7 +17,9 @@ public class Exercise01 {
 
         for (String name: names){
             char firstLetter = name.charAt(0);
-
+            nameMap.get(firstLetter).add(name);
         }
+
+        System.out.println(nameMap);
     }
 }
